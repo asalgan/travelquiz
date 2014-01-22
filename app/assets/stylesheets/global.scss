@@ -1,0 +1,72 @@
+@import "library";
+
+$teal: #1EBBA6;
+$orange: #EE7836;
+$green: #85BE8D;
+
+html,body{height:100%;}
+.container{padding:0;}
+.carousel,.item,.active{height:100%;}
+.carousel-inner{height:100%;}
+.fill{width:100%;height:100%;background-position:center;background-size:cover;}
+.right {
+	height: 50px;
+	margin: 0 auto;
+}
+
+#titlepage {
+	background-color: $teal;
+}
+
+.start {
+	@include next-button($teal)
+}
+
+#firstquestionpage {
+	background-color: $orange;
+}
+
+.first {
+	@include next-button($orange)
+}
+
+#secondquestionpage {
+	background-color: $green;
+}
+
+.second {
+	@include next-button($green)
+}
+
+.carousel-control {
+	opacity: 1;
+	text-shadow: none;
+	padding-top: 13px;
+		&.right {
+			background-image: none;
+	}
+}
+
+.titlepageheader {
+	@include text;
+	margin-top: 20%;
+	font-size: 70px;
+}
+
+.questionheader {
+	@include text;
+	@include header;
+}
+
+.questions {
+	@include text;
+	@include question;
+}
+
+/* keep full widget on smaller screens */
+@media (max-width: 767px) { 
+	body {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

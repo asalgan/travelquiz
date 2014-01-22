@@ -1,0 +1,26 @@
+@mixin next-button($c) {
+    background-color: darken($c, 5%);
+	font-family: 'Roboto Slab', serif;
+	font-weight: 100;
+
+		&:hover {
+			background-color: darken($c, 10%);
+	}
+}
+
+@mixin text {
+	font-family: 'Lato', sans-serif;
+	color: white;
+	font-weight: 100;
+	text-align: center;
+}
+
+@mixin header {
+	margin-top: 10%;
+	font-size: 30px;
+}
+
+@mixin question {
+	margin-top: 2%;
+	font-size: 50px;
+}

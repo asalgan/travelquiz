@@ -11,15 +11,22 @@ html,body{height:100%;}
 .fill{width:100%;height:100%;background-position:center;background-size:cover;}
 .right {
 	height: 50px;
-	margin: 0 auto;
 }
 
 #titlepage {
 	background-color: $teal;
+	position: relative;
+}
+
+.carousel-control.right {
+	left: 50%;
+	margin-left: -100px;
 }
 
 .start {
-	@include next-button($teal)
+	@include next-button($teal);
+	position: absolute;
+  	top: 50%;
 }
 
 #firstquestionpage {
@@ -42,6 +49,7 @@ html,body{height:100%;}
 	opacity: 1;
 	text-shadow: none;
 	padding-top: 13px;
+	width: 200px;
 		&.right {
 			background-image: none;
 	}

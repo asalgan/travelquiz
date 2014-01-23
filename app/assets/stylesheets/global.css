@@ -23,17 +23,24 @@ html, body {
 
 .right {
   height: 50px;
-  margin: 0 auto;
 }
 
 #titlepage {
   background-color: #1ebba6;
+  position: relative;
+}
+
+.carousel-control.right {
+  left: 50%;
+  margin-left: -100px;
 }
 
 .start {
   background-color: #1aa592;
   font-family: 'Roboto Slab', serif;
   font-weight: 100;
+  position: absolute;
+  top: 50%;
 }
 .start:hover {
   background-color: #178f7f;
@@ -69,6 +76,7 @@ html, body {
   opacity: 1;
   text-shadow: none;
   padding-top: 13px;
+  width: 200px;
 }
 .carousel-control.right {
   background-image: none;

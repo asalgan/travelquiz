@@ -44,6 +44,16 @@ html, body {
 }
 .start:hover {
   background-color: #178f7f;
+  border: 1px solid white;
+}
+
+input[type=radio] {
+  display: none;
+}
+input[type=radio]:checked + p {
+  background: #696d86;
+  border: 1px solid white;
+  color: white;
 }
 
 #firstquestionpage {
@@ -57,41 +67,34 @@ html, body {
 }
 .first:hover {
   background-color: #de5c13;
+  border: 1px solid white;
 }
 
-.answers {
+.firstanswers {
   margin-top: 40px;
   position: absolute;
   width: 640px;
   left: 50%;
   margin-left: -330px;
 }
-.answers label {
-  background-color: #ec681e;
-  font-family: 'Roboto Slab', serif;
-  font-weight: 100;
+.firstanswers label p {
+  border: 1px solid white;
+  padding-top: 15px;
+  margin-left: 20px;
+  overflow: hidden;
+  width: 300px;
+  height: 50px;
   font-family: 'Lato', sans-serif;
   color: white;
   font-weight: 100;
   text-align: center;
-  width: 300px;
-  height: 50px;
-  overflow: hidden;
-  margin-top: 20px;
-  margin-left: 20px;
-  border: 1px solid white;
-}
-.answers label:hover {
-  background-color: #de5c13;
-}
-.answers label p {
   margin-top: 15px;
   font-family: 'Roboto Slab', serif;
 }
-.answers label:hover {
+.firstanswers label p:hover {
   cursor: pointer;
 }
-.answers label.left, .answers label.right {
+.firstanswers label.left, .firstanswers label.right {
   float: left;
 }
 
@@ -106,6 +109,77 @@ html, body {
 }
 .second:hover {
   background-color: #64ac6e;
+  border: 1px solid white;
+}
+
+.secondanswers {
+  margin-top: 40px;
+  position: absolute;
+  width: 640px;
+  left: 50%;
+  margin-left: -330px;
+}
+.secondanswers label p {
+  border: 1px solid white;
+  padding-top: 15px;
+  margin-left: 20px;
+  overflow: hidden;
+  width: 300px;
+  height: 50px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 15px;
+  font-family: 'Roboto Slab', serif;
+}
+.secondanswers label p:hover {
+  cursor: pointer;
+}
+.secondanswers label.left, .secondanswers label.right {
+  float: left;
+}
+
+#thirdquestionpage {
+  background-color: #d36668;
+}
+
+.third {
+  background-color: #cd5254;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+}
+.third:hover {
+  background-color: #c83e41;
+  border: 1px solid white;
+}
+
+.thirdanswers {
+  margin-top: 40px;
+  position: absolute;
+  width: 640px;
+  left: 50%;
+  margin-left: -330px;
+}
+.thirdanswers label p {
+  border: 1px solid white;
+  padding-top: 15px;
+  margin-left: 20px;
+  overflow: hidden;
+  width: 300px;
+  height: 50px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 15px;
+  font-family: 'Roboto Slab', serif;
+}
+.thirdanswers label p:hover {
+  cursor: pointer;
+}
+.thirdanswers label.left, .thirdanswers label.right {
+  float: left;
 }
 
 .carousel-control {

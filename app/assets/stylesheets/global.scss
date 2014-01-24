@@ -3,6 +3,7 @@
 $teal: #1EBBA6;
 $orange: #EE7836;
 $green: #85BE8D;
+$red: #D36668;
 
 html,body{height:100%;}
 .container{padding:0;}
@@ -29,6 +30,16 @@ html,body{height:100%;}
   	top: 50%;
 }
 
+input[type=radio] {
+    display: none;
+
+    &:checked + p {
+        background:  #696D86 ;
+        border: 1px solid white ;
+        color: white;
+        }
+ }
+
 #firstquestionpage {
 	background-color: $orange;
 }
@@ -37,7 +48,7 @@ html,body{height:100%;}
 	@include next-button($orange)
 }
 
-.answers {
+.firstanswers {
 	@include answers($orange)
 }
 
@@ -47,6 +58,22 @@ html,body{height:100%;}
 
 .second {
 	@include next-button($green)
+}
+
+.secondanswers {
+	@include answers($green)
+}
+
+#thirdquestionpage {
+	background-color: $red;
+}
+
+.third {
+	@include next-button($red)
+}
+
+.thirdanswers {
+	@include answers($red)
 }
 
 .carousel-control {

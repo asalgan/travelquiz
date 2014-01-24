@@ -1,5 +1,10 @@
 WhereToVacationQuiz::Application.routes.draw do
 
-  root 'quiz#index'
-
+  	root 'question#index'
+	resources :users
+  	resources :answers
+  	resources :questions do
+    member { post :qua }
+  end
+  resources :quizzes
 end

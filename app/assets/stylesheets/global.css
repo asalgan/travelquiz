@@ -59,6 +59,43 @@ html, body {
   background-color: #de5c13;
 }
 
+.answers {
+  margin-top: 40px;
+  position: absolute;
+  left: 50%;
+  margin-left: -340px;
+}
+.answers ul {
+  float: left;
+}
+.answers ul li {
+  background-color: #ec681e;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  width: 300px;
+  height: 50px;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-left: 20px;
+  border: 1px solid white;
+}
+.answers ul li:hover {
+  background-color: #de5c13;
+}
+.answers ul li p {
+  margin-top: 15px;
+}
+.answers ul li:hover {
+  cursor: pointer;
+}
+.answers ul.left, .answers ul.right {
+  float: left;
+}
+
 #secondquestionpage {
   background-color: #85be8d;
 }

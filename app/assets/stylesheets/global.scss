@@ -37,6 +37,10 @@ html,body{height:100%;}
 	@include next-button($orange)
 }
 
+.answers {
+	@include answers($orange)
+}
+
 #secondquestionpage {
 	background-color: $green;
 }
@@ -70,6 +74,8 @@ html,body{height:100%;}
 	@include text;
 	@include question;
 }
+
+
 
 /* keep full widget on smaller screens */
 @media (max-width: 767px) { 

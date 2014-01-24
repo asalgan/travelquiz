@@ -28,11 +28,10 @@
 @mixin answers($color) {
 	margin-top: 40px;
 	position: absolute;
+	width: 640px;
 	left: 50%;
-	margin-left: -340px;
-ul {
-	float: left;
-		li {
+	margin-left: -330px;
+	label {
 			@include next-button($color);
 			@include text;
 			width: 300px;
@@ -44,12 +43,12 @@ ul {
 
 			p {
 			margin-top: 15px;
+			font-family: 'Roboto Slab', serif;
 			}
 
 			&:hover {
 			cursor: pointer;
 			}
-		}
 
 		&.left, &.right {
 		float: left;

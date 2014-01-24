@@ -62,13 +62,11 @@ html, body {
 .answers {
   margin-top: 40px;
   position: absolute;
+  width: 640px;
   left: 50%;
-  margin-left: -340px;
+  margin-left: -330px;
 }
-.answers ul {
-  float: left;
-}
-.answers ul li {
+.answers label {
   background-color: #ec681e;
   font-family: 'Roboto Slab', serif;
   font-weight: 100;
@@ -83,16 +81,17 @@ html, body {
   margin-left: 20px;
   border: 1px solid white;
 }
-.answers ul li:hover {
+.answers label:hover {
   background-color: #de5c13;
 }
-.answers ul li p {
+.answers label p {
   margin-top: 15px;
+  font-family: 'Roboto Slab', serif;
 }
-.answers ul li:hover {
+.answers label:hover {
   cursor: pointer;
 }
-.answers ul.left, .answers ul.right {
+.answers label.left, .answers label.right {
   float: left;
 }
 

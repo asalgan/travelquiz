@@ -4,6 +4,9 @@ $teal: #1EBBA6;
 $orange: #EE7836;
 $green: #85BE8D;
 $red: #D36668;
+$purple: #8776AB;
+$blue: #0099cc;
+$yellow: #F4B8A4;
 
 html,body{height:100%;}
 .container{padding:0;}
@@ -15,7 +18,8 @@ html,body{height:100%;}
 }
 
 #titlepage {
-	background-color: $teal;
+	background-image: url(http://31.media.tumblr.com/5d40ddbd07fc716e715bd5462e305edd/tumblr_mx3tmhXNNE1st5lhmo1_1280.jpg);
+	// background-color: $teal;
 	position: relative;
 }
 
@@ -76,6 +80,54 @@ input[type=radio] {
 	@include answers($red)
 }
 
+#fourthquestionpage {
+	background-color: $teal;
+}
+
+.fourth {
+	@include next-button($teal)
+}
+
+.fourthanswers {
+	@include answers($teal)
+}
+
+#fifthquestionpage {
+	background-color: $purple;
+}
+
+.fifth {
+	@include next-button($purple)
+}
+
+.fifthanswers {
+	@include answers($purple)
+}
+
+#sixthquestionpage {
+	background-color: $blue;
+}
+
+.sixth {
+	@include next-button($blue)
+}
+
+.sixthanswers {
+	@include answers($blue)
+}
+
+#seventhquestionpage {
+	background-color: $yellow;
+}
+
+.seventh {
+	@include next-button($yellow)
+}
+
+.seventhanswers {
+	@include answers($yellow)
+}
+
 .carousel-control {
 	opacity: 1;
 	text-shadow: none;
@@ -88,8 +140,14 @@ input[type=radio] {
 
 .titlepageheader {
 	@include text;
-	margin-top: 20%;
+	margin-top: 15%;
 	font-size: 70px;
+}
+
+.titlepagesubheader {
+	@include text;
+	margin-top: 20px;
+	font-size: 30px;
 }
 
 .questionheader {

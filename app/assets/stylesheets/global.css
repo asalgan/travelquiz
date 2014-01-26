@@ -26,7 +26,7 @@ html, body {
 }
 
 #titlepage {
-  background-color: #1ebba6;
+  background-image: url(http://31.media.tumblr.com/5d40ddbd07fc716e715bd5462e305edd/tumblr_mx3tmhXNNE1st5lhmo1_1280.jpg);
   position: relative;
 }
 
@@ -182,6 +182,174 @@ input[type=radio]:checked + p {
   float: left;
 }
 
+#fourthquestionpage {
+  background-color: #1ebba6;
+}
+
+.fourth {
+  background-color: #1aa592;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+}
+.fourth:hover {
+  background-color: #178f7f;
+  border: 1px solid white;
+}
+
+.fourthanswers {
+  margin-top: 40px;
+  position: absolute;
+  width: 640px;
+  left: 50%;
+  margin-left: -330px;
+}
+.fourthanswers label p {
+  border: 1px solid white;
+  padding-top: 15px;
+  margin-left: 20px;
+  overflow: hidden;
+  width: 300px;
+  height: 50px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 15px;
+  font-family: 'Roboto Slab', serif;
+}
+.fourthanswers label p:hover {
+  cursor: pointer;
+}
+.fourthanswers label.left, .fourthanswers label.right {
+  float: left;
+}
+
+#fifthquestionpage {
+  background-color: #8776ab;
+}
+
+.fifth {
+  background-color: #7966a1;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+}
+.fifth:hover {
+  background-color: #6d5a94;
+  border: 1px solid white;
+}
+
+.fifthanswers {
+  margin-top: 40px;
+  position: absolute;
+  width: 640px;
+  left: 50%;
+  margin-left: -330px;
+}
+.fifthanswers label p {
+  border: 1px solid white;
+  padding-top: 15px;
+  margin-left: 20px;
+  overflow: hidden;
+  width: 300px;
+  height: 50px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 15px;
+  font-family: 'Roboto Slab', serif;
+}
+.fifthanswers label p:hover {
+  cursor: pointer;
+}
+.fifthanswers label.left, .fifthanswers label.right {
+  float: left;
+}
+
+#sixthquestionpage {
+  background-color: #0099cc;
+}
+
+.sixth {
+  background-color: #0086b3;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+}
+.sixth:hover {
+  background-color: #007399;
+  border: 1px solid white;
+}
+
+.sixthanswers {
+  margin-top: 40px;
+  position: absolute;
+  width: 640px;
+  left: 50%;
+  margin-left: -330px;
+}
+.sixthanswers label p {
+  border: 1px solid white;
+  padding-top: 15px;
+  margin-left: 20px;
+  overflow: hidden;
+  width: 300px;
+  height: 50px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 15px;
+  font-family: 'Roboto Slab', serif;
+}
+.sixthanswers label p:hover {
+  cursor: pointer;
+}
+.sixthanswers label.left, .sixthanswers label.right {
+  float: left;
+}
+
+#seventhquestionpage {
+  background-color: #f4b8a4;
+}
+
+.seventh {
+  background-color: #f1a68d;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+}
+.seventh:hover {
+  background-color: #ee9477;
+  border: 1px solid white;
+}
+
+.seventhanswers {
+  margin-top: 40px;
+  position: absolute;
+  width: 640px;
+  left: 50%;
+  margin-left: -330px;
+}
+.seventhanswers label p {
+  border: 1px solid white;
+  padding-top: 15px;
+  margin-left: 20px;
+  overflow: hidden;
+  width: 300px;
+  height: 50px;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 15px;
+  font-family: 'Roboto Slab', serif;
+}
+.seventhanswers label p:hover {
+  cursor: pointer;
+}
+.seventhanswers label.left, .seventhanswers label.right {
+  float: left;
+}
+
 .carousel-control {
   opacity: 1;
   text-shadow: none;
@@ -197,8 +365,17 @@ input[type=radio]:checked + p {
   color: white;
   font-weight: 100;
   text-align: center;
-  margin-top: 20%;
+  margin-top: 15%;
   font-size: 70px;
+}
+
+.titlepagesubheader {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-weight: 100;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
 }
 
 .questionheader {

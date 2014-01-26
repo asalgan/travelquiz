@@ -16,5 +16,13 @@
 //= require turbolinks
 //= require_tree .
 
-$('.carousel').carousel();
+$( document ).ready(function() {
 
+var check= document.getElementByTagName('radio');
+  if (check.checked){
+    document.getElementByClassName('carousel-control').style.display='block';
+  }
+else{
+ document.getElementByClassName('carousel-control').style.display='none';
+}
+});

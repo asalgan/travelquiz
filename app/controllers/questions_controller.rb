@@ -1,13 +1,6 @@
 class QuestionsController < ApplicationController
 	def index
-		@question = Question.all
-		@answers1 = Answer.where(question_id: 1)
-		@answers2 = Answer.where(question_id: 2)
-		@answers3 = Answer.where(question_id: 3)
-		@answers4 = Answer.where(question_id: 4)
-		@answers5 = Answer.where(question_id: 5)
-		@answers6 = Answer.where(question_id: 6)
-		@answers7 = Answer.where(question_id: 7)
+		@location = Location.all.sample
 	end
 
 	def new

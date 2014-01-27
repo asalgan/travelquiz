@@ -177,7 +177,7 @@
           <h3 class="questions">How open are you to trying a new dish?</h3>
           <div class="pull-center">
             <!-- <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a> -->
-            <a class="carousel-control right seventh" href="#myCarousel" data-slide="next">Next</a>
+            <a class="carousel-control right seventh" href="#myCarousel" data-slide="next">See results</a>
           </div>
            <fieldset class="seventhanswers">
                 <label class="left">
@@ -196,6 +196,18 @@
         </div>
       </div>
     </div>
+    
+    <div class="item">
+      <div class="fill" id="resultpage" style="background-image: url(<%= @location.bgimageurl %>); background-size: cover; background-position: center">
+        <div class="container">
+          <div class="result">
+            <h2>You should visit.. </h2>
+            <p class="resultname"><%= @location.name %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 </div>

@@ -19,19 +19,18 @@ html,body{height:100%;}
 
 #titlepage {
 	background-image: url(http://31.media.tumblr.com/5d40ddbd07fc716e715bd5462e305edd/tumblr_mx3tmhXNNE1st5lhmo1_1280.jpg);
-	// background-color: $teal;
 	position: relative;
 }
 
 .carousel-control.right {
 	left: 50%;
 	margin-left: -100px;
+	margin-top: 550px;
 }
 
 .start {
 	@include next-button($teal);
 	position: absolute;
-  	top: 50%;
 }
 
 input[type=radio] {
@@ -128,6 +127,34 @@ input[type=radio] {
 	@include answers($yellow)
 }
 
+.result {
+	margin: 0 auto;
+	width: 500px;
+	height: 150px;
+	background-color: black;
+	margin-top: 250px;
+	opacity: .8;
+
+	h2 {
+		text-align: center;
+		color: white;
+		font-family: 'Lato', sans-serif;
+		font-weight: 100;
+		font-size: 40px;
+		padding-top: 10px;
+	}
+
+	p {
+		text-align: center;
+		color: white;
+		font-family: 'Lato', sans-serif;
+		font-weight: 100;
+		font-size: 70px;
+		padding-top: 10px;
+
+	}
+}
+
 .carousel-control {
 	opacity: 1;
 	text-shadow: none;
@@ -161,11 +188,44 @@ input[type=radio] {
 }
 
 
-
-/* keep full widget on smaller screens */
 @media (max-width: 767px) { 
 	body {
 		padding-left: 0;
 		padding-right: 0;
 	}
 }
+
+@media screen and (max-width: 640px) { 
+
+	.left, .right {
+		margin-left: 160px;
+	}
+
+	.right {
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-width: 500px) { 
+	.result {
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 400px) { 
+	.result {
+		width: 350px;
+	}
+}
+
+@media screen and (max-width: 350px) { 
+	.result {
+		width: 320px;
+	}
+}
+
+
+
+
+
+
